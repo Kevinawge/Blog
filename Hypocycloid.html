@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Hypocycloid Motion by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Hypocycloid Motion</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Hypocycloid Motion</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="hypocycloid.jpg" alt="Hypocycloid Pattern" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: left;">
+      <h2 style="font-size: 22px; font-weight: bold; text-align: center;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        This image visualizes the rolling motion of a circle inside another, creating what is known as a hypocycloid.
+        I used three different radii pairs, such as (5, 3), (6, 4), and (7, 2.5), to control how the small circle rotates within the larger one.
+        By plotting each curve over 20,000 points spaced evenly from 0 to 2π times the outer radius,
+        the precision of the pattern stays clean and sharply layered.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        Each point’s position follows parametric equations where:<br>
+        <strong>x = (R − r) × cos(θ) + r × cos((k − 1)θ)</strong><br>
+        <strong>y = (R − r) × sin(θ) − r × sin((k − 1)θ)</strong><br>
+        Here, <strong>k = R / r</strong> defines the ratio of the outer to inner radius and governs the number of cusps and the spacing of the loops.
+        The subtraction and additional cosine terms inside the cosine and sine functions introduce a rhythmic interference
+        that leads to the folding of the curves inward.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        To give the design its glowing and smooth appearance, I repeated scatter plots with alpha values from 0.02 to 0.12
+        and added a mirrored version of the same pattern by reflecting the coordinates across the origin.
+        Color intensity was modulated using the function <strong>(sin(2θ + π/3) + 1) / 2</strong>
+        to create natural gradients through periodic variation.
+        The result is a layered harmonic motion that flows outward in crisp petals.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Pollock-Style Motion Study by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Pollock-Style Process</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Pollock-Style Process</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- ANIMATION -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="pollock.gif" alt="Pollock Gesture Animation" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: left;">
+      <h2 style="font-size: 22px; font-weight: bold; text-align: center;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        This animation reimagines the energetic gestures found in Jackson Pollock’s work through a system of movement driven by variation and repetition.
+        I was interested in the idea of a brush moving freely in space not with randomness alone but with structure buried in each line’s behavior.
+        The strokes in this image appear to move as if guided by intent, twisting slightly as they lengthen, never quite repeating the same gesture twice.
+        It captures the feeling of momentum and friction, like paint dragged across an invisible surface.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        The idea began with a question: what happens if each mark is not just placed but unfolds over time, turning and accelerating as if it had a will of its own?
+        I wanted the code to simulate motion, not just position. Each brush stroke is born with its own angle, speed, and slight rotation.
+        Some bend gently, others stay rigid, and each selects a color from a defined palette before tracing its path.
+        The final composition grows from the accumulation of these evolving movements.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        To model this, I assigned every line a starting position sampled uniformly in a range centered at the origin.
+        The initial angle is chosen from the interval zero to two pi. At each frame, the new x and y values are computed using cosine and sine functions:
+        <code>xₙ = xₙ₋₁ + cos(θ) × s</code> and <code>yₙ = yₙ₋₁ + sin(θ) × s</code>, where <code>s</code> is the step size.
+        A curvature term is added to θ so the angle evolves across frames: <code>θₙ = θₙ₋₁ + c</code>, with <code>c</code> drawn from a small set of values including 0, 0.005, and −0.01.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        Color is sampled from a set palette, and stroke thickness is selected from a uniform distribution between 0.2 and 1.8.
+        The evolving lines are plotted using Matplotlib and saved with Pillow as a 150-frame GIF.
+        Even though the system is governed by formulas, the result carries an expressive spontaneity.
+        Each frame becomes a moment in a longer gesture, and the math works like invisible gravity, subtle but constant, beneath the entire piece.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

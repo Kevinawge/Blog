@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Fibonacci Spiral Visualization by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Fibonacci Spiral</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Fibonacci Spiral</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="fibonacci.jpg" alt="Fibonacci Spiral" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The Fibonacci spiral is a geometric approximation of the golden spiral, constructed by arranging squares whose side lengths follow the Fibonacci sequence.
+        Each successive square grows in size according to the recursive rule Fn = Fn−1 + Fn−2, and when quarter circles are drawn through each square, they approximate a continuous spiral.
+        Although this construction is not a true logarithmic spiral, the ratio between consecutive Fibonacci numbers converges to the golden ratio φ, so the resulting shape becomes increasingly close to the golden spiral as more squares are added.
+        The curve captures the essence of self-similarity and recursive growth found in natural patterns, such as the arrangements of seeds, shells, and branching systems.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        To generate this spiral, I implemented an algorithm that first builds the underlying sequence and then arranges each square in a way that respects rotational alignment.
+        At each step, I calculated the position and orientation of the next square by updating the direction vector and appending the quarter arc connecting the new square.
+        The spiral was then traced by combining these arcs into a continuous path.
+        I used careful geometric transformations to preserve the structure and curvature across the entire figure.
+        The final render demonstrates how a simple numerical rule gives rise to a visually harmonic structure, rooted in recurrence but expressed through spatial proportion.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        You can find my code repository <a href="https://github.com/Kevinawge/mathematical-artworks" target="_blank" style="color: #0056b3; text-decoration: underline;">here</a>.
+      </p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

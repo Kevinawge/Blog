@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="An archive of Kevin Hernandez's mathematical art and attractor simulations." />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Halvorsen Attractor</title>
+  <style>
+    .equation-box {
+      background-color: #f5f5f5;
+      border-left: 4px solid #444;
+      padding: 15px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      margin: 20px 0;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CONTAINER -->
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Halvorsen Attractor</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="6chaos.png" alt="Halvorsen Attractor" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- VIDEOS -->
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px;">
+      <video src="static_halvorsen.mp4" controls style="width: 100%; max-width: 440px; border: 1px solid #ddd;"></video>
+      <video src="rotating_halvorsen.mp4" controls style="width: 100%; max-width: 440px; border: 1px solid #ddd;"></video>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The Halvorsen attractor is a smooth and continuous chaotic system first introduced by Norwegian physicist Einar Halvorsen. 
+        It belongs to the category of three-dimensional autonomous systems defined by differential equations that produce strange attractors. 
+        Unlike more jagged or scroll-like attractors, the Halvorsen system is characterized by its elegant loops and soft curvature, forming a dense, braided flow in space. 
+        Despite its visual grace, the system is fundamentally chaotic. Its sensitivity to initial conditions ensures that even tiny perturbations lead to entirely distinct trajectories over time.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The equations defining the Halvorsen system are:
+      </p>
+
+      <div class="equation-box">
+        dx/dt = −a·x − 4·y − 4·z − y²<br>
+        dy/dt = −a·y − 4·z − 4·x − z²<br>
+        dz/dt = −a·z − 4·x − 4·y − x²
+      </div>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        In this system, a single parameter <em>a</em> controls the behavior. A typical value like a = 1.4 results in chaotic flow. 
+        These equations describe a continuous interaction between all three spatial coordinates, where each derivative is influenced not only by linear terms 
+        but also by a quadratic nonlinearity involving the other variables. This coupling creates feedback loops that feed into one another, forming a self-reinforcing dynamic. 
+        The attractor has a cyclical appearance, with motion folding and circulating in a way that gives it the illusion of balance, even though it never repeats.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        To simulate the Halvorsen attractor, I used the Euler method to compute a numerical approximation of its trajectory. 
+        Starting from a set of initial conditions, I evaluated the system’s derivatives and stepped forward in small time intervals to update the position of the point in three-dimensional space. 
+        This process was repeated over many iterations to produce a long, continuous trajectory. The nonlinearity of the system leads to divergence between nearby paths, 
+        so even a slight change in the starting point yields visibly different curves.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        For visual clarity, I assigned color based on the time variable to enhance the sense of flow and motion within the attractor. 
+        The result is a form that appears both structured and organic. Multiple trajectories were plotted to expose the density and complexity of the system. 
+        The Halvorsen attractor does not rely on sharp turns or abrupt jumps. Instead, it builds its beauty through continuous curvature and recursive looping, 
+        producing a shape that feels both mathematical and fluid. It captures the paradox of chaos, where unpredictability is generated from a perfectly ordered set of rules.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        You can find my code repository <a href="https://github.com/Kevinawge/mathematical-artworks" target="_blank" style="color: #0056b3; text-decoration: underline;">here</a>.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

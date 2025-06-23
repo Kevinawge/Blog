@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="An archive of Kevin Hernandez's mathematical art and attractor simulations." />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Aizawa Attractor</title>
+  <style>
+    .equation-box {
+      background-color: #f5f5f5;
+      border-left: 4px solid #444;
+      padding: 15px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      margin: 20px 0;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CONTAINER -->
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Aizawa Attractor</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="5chaos.png" alt="Aizawa Attractor" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- VIDEOS -->
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px;">
+      <video src="static_aizawa.mp4" controls style="width: 100%; max-width: 440px; border: 1px solid #ddd;"></video>
+      <video src="rotating_aizawa.mp4" controls style="width: 100%; max-width: 440px; border: 1px solid #ddd;"></video>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The Aizawa attractor is a visually dense and geometrically elegant system discovered in the study of nonlinear dynamics and strange attractors. 
+        It was introduced by Yoshisuke Aizawa and is notable for producing toroidal and layered forms in phase space. 
+        The system is designed with additional symmetry and radial behavior compared to more classical chaotic systems. 
+        Instead of sharp scrolls or folding loops, the Aizawa attractor creates a structure that appears spherical and pulsating, 
+        with motion expanding and contracting in a rhythm that seems almost orbital. 
+        The motion remains chaotic, but its path suggests cohesion and containment, 
+        forming a complex object that looks almost like a woven shell or energy field.
+      </p>
+
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The Aizawa system is described by the following differential equations:
+      </p>
+
+      <div class="equation-box">
+        dx/dt = (z − b)·x − d·y<br>
+        dy/dt = d·x + (z − b)·y<br>
+        dz/dt = c + a·z − (z³ / 3) − (x² + y²)(1 + e·z) + f·z·x³
+      </div>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The system has six parameters: a, b, c, d, e, and f. 
+        A common set of values that generates the attractor's characteristic form is a = 0.95, b = 0.7, c = 0.6, d = 3.5, e = 0.25, and f = 0.1. 
+        These equations combine polynomial and trigonometric-like behaviors with nonlinear coupling, 
+        resulting in a continuous but never-repeating flow through three-dimensional space. The attractor remains bounded and fills out a central spherical region, forming layer after layer as it evolves.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        To simulate the Aizawa attractor, I applied the Euler method to integrate the equations forward in time. 
+        Starting from an initial state, the derivatives were calculated at each step based on the current coordinates and parameters. 
+        These derivatives were used to update the position, allowing the trajectory to unfold iteratively.
+        The system's complexity comes not just from chaotic divergence, but from the delicate interplay between radial and angular motion. 
+        The terms involving x², y², and z³ introduce a kind of pulsation, pulling the trajectory inward and pushing it outward in an ongoing cycle.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        Visually, the attractor appears as a glowing structure with hundreds of intertwined lines forming a tight spherical weave. 
+        I assigned color gradients based on time to accentuate motion and depth. 
+        The final render shows a shape that is both organic and constructed, with repeated intersections that never quite overlap.
+        The Aizawa attractor invites the viewer into a space that feels alive, pulsing with mathematical rhythm. 
+        It is not a system that spirals or scrolls outward, but one that folds in on itself, 
+        building its form from layers of motion, encoding complexity in the geometry of repetition without repetition.
+      </p>
+
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        You can find my code repository <a href="https://github.com/Kevinawge/mathematical-artworks" target="_blank" style="color: #0056b3; text-decoration: underline;">here</a>.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+</body>
+</html>

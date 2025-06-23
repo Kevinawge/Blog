@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Rainfall Flow Simulation by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Rainfall Flow</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Rainfall Flow Simulation</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="rain.gif" alt="Rainfall Simulation" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        This gif shows rainfall as a simulation of angled particle motion, where each raindrop follows a calculated trajectory determined by trigonometric expressions.
+        The direction of the rain is set by an angle of 80 degrees, and each drop's movement includes a horizontal displacement defined by cos(80°), which is approximately 0.1736.
+        This small cosine value ensures the rain appears mostly vertical with a slight slant, mimicking natural rainfall influenced by wind.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 30px;">
+        The visual trail of each raindrop is computed using this same angular offset.
+        The endpoint is found by extending the drop's origin horizontally by length × cos(80°) and vertically by its full length.
+        This forms an angled segment where the x-component remains small due to the shallow cosine, while the y-component dominates,
+        reinforcing the impression of diagonal rainfall across the scene.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 30px;">
+        The rate at which drops fall also incorporates numerical reasoning.
+        The velocity of each drop is determined by 70 / s, where s is a speed scale ranging from 1 to 3.
+        These discrete values control how far the raindrop travels per frame while still conforming to the angle-based path defined earlier,
+        maintaining visual consistency within the animated system.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

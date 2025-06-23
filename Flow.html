@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Graph-Driven Flow Maps by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Graph-Driven Flow Maps</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Graph-Driven Flow Maps</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="flow.jpg" alt="Graph-Driven Flow Maps" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        I created this flowing structure by simulating the path of particles emitted from vertical lines and guided by Perlin noise fields.
+        Each particle begins at a point between two vertical anchors and then iteratively updates its position by rotating in the direction determined by the noise field.
+        I calculate the angle using the Perlin noise value, convert that into a directional vector, and then move the particle by a small amount along that vector.
+        The paths curve naturally and densely in some regions while dissipating into open space elsewhere, producing smooth arcs and tendrils that evoke fluid motion.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 30px;">
+        Mathematically, this relies on sampling a 3D noise field with spatial coordinates and a time-like variable to introduce organic variability.
+        Each emitted particle follows a pseudo-random yet deterministic path based on noise gradients, creating patterns that blend structured geometry with stochastic behavior.
+        By layering multiple such lines from randomized base points, I generated a map of currents that resemble airflow or magnetic flux.
+        The final plot uses subtle alpha blending and line weight to emphasize softness and continuity in form.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

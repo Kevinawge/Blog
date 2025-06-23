@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Stern's Sequence Cathedral Visualization by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Stern's Sequence (Cathedrals)</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Stern's Sequence (Cathedrals)</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="cathedral.PNG" alt="Stern Sequence Plot" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        This visual piece is generated from Stern’s diatomic sequence, but its structure evokes something entirely different.
+        Towering cathedral-like formations, arches of silence, and intricate repetition are carved out of arithmetic.
+        The design emerges from stacking integer outputs vertically and letting the density of values build toward peaks, forming an architecture entirely native to mathematics.
+        There is no randomness here. Every value is placed precisely, creating a sacred geometry from recursion.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The sequence begins with a(0) = 0 and a(1) = 1, followed by the rules a(2n) = a(n) and a(2n+1) = a(n) + a(n+1).
+        Each value is computed individually using a recursive method that divides the input down to its simplest components.
+        This avoids constructing entire rows and instead evaluates values directly by index.
+        The pattern this produces is deceptively simple in code yet enormously rich when plotted, capturing the ascending spikes and calm troughs that define the piece’s vertical rhythm.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The function evaluates each index based on whether it is even or odd, breaking it down recursively through integer division until it reaches a base case.
+        This process reflects the binary composition of each number and maps that structural logic onto the plane.
+        The final array of points, when plotted against their indices, builds a jagged but coherent skyline of symbolic architecture.
+        A numeric monument with no bricks or mortar, only integers and rules.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        You can find my code repository <a href="https://github.com/Kevinawge/mathematical-artworks" target="_blank" style="color: #0056b3; text-decoration: underline;">here</a>.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

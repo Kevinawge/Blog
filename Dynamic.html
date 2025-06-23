@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Visual Illusions by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Illusion of Space</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Illusion of Space</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="illusion.jpeg" alt="Illusion Frame" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- VIDEO -->
+    <div style="text-align: center; margin-top: 50px;">
+      <video src="Illusion3.mp4" controls style="width: 90%; max-width: 900px; height: auto;"></video>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: left;">
+      <h2 style="font-size: 22px; font-weight: bold; text-align: center;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        This image plays with the perception of three-dimensional depth using only two-dimensional geometry.
+        At first glance, it seems to draw the eye into a tunnel or infinite hallway, an illusion created entirely by the spacing and scaling of simple squares.
+        As each square recedes, our brain interprets the shrinking shapes as markers of distance, even though they sit perfectly flat on the screen.
+        The illusion takes advantage of how we naturally associate smaller objects with being farther away, tricking our visual system into imagining space where there is none.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        Visually, the effect echoes certain architectural sketches or the feeling of walking through a narrowing corridor.
+        The consistent alignment of corners, the uniform line thickness, and the clean contrast between figure and background contribute to the sensation of forward motion.
+        It recalls classic optical illusions but leans on structure rather than distortion.
+        Rather than warping lines or bending perspective, it creates a false sense of dimensionality through repetition and order alone.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        To generate this, I used a for loop to draw a sequence of nested squares, each one translated slightly inward and scaled down by a fixed ratio.
+        The initial square is large and sits at the origin. With each iteration, the top left corner is moved forward while the length is divided by a scale factor slightly above one,
+        such as 1.1 or 1.15. This results in a geometric progression where each square shrinks proportionally from the last.
+        Mathematically, if L0 is the original side length, then Ln = L0 / rⁿ, where r is the scaling ratio and n is the iteration index.
+        The regular spacing and ratio compound to give the illusion of spatial acceleration and visual compression, turning a flat plane into a false tunnel.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        You can find my code repository <a href="https://github.com/Kevinawge/mathematical-artworks" target="_blank" style="color: #0056b3; text-decoration: underline;">here</a>.
+      </p>
+      
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

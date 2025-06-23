@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Parametric Curve Families by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Parametric Curve Families</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Parametric Curve Families</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="parametric.png" alt="Parametric Curve Families Visualization" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        Each square is parameterized by an index *i* which defines its rotation as θ = 2π5i and its position along a circular trajectory with radius modulated by sin(i)⋅sin(i^∘).
+        The size of the square is not constant but dynamically scaled using the expression tan(θ) · cos²(θ) · π² · 6tan(θ) · cos²(θ) · π² · 6, introducing controlled divergence in shape as the angle approaches singularities.
+        By embedding this logic into affine transformations, I was able to simulate both orbital motion and internal expansion simultaneously, allowing pure math to dictate structure, symmetry, and disorder within a single evolving visual language.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        This work explores the interplay between parametric geometry and affine transformation by generating a sequence of rotated and translated squares governed by trigonometric functions.
+        I constructed each square using an evolving angular parameter and computed its scale from a composite function involving tangent, cosine, and pi constants.
+        This produces a family of curves where each square's size reflects subtle nonlinear distortions.
+        The rotational symmetry is reinforced by a uniform angular step, while translation is constrained along the horizontal axis through a sinusoidal modulation.
+        The cumulative effect is a densely interlaced structure where geometry behaves like a wave collapsed into architecture.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        You can find my code repository <a href="https://github.com/Kevinawge/mathematical-artworks" target="_blank" style="color: #0056b3; text-decoration: underline;">here</a>.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

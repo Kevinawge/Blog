@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Fractal Fern Growth by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Fractal Fern Growth</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Fractal Fern Growth</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="fern.jpg" alt="Fractal Fern" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: left;">
+      <h2 style="font-size: 22px; font-weight: bold; text-align: center;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        This fern emerged from repeated transformations applied to a single point. I used four different rules, each defined by equations.
+        One transformation maps any x y to 0 and 0.16y, which flattens and pulls points downward into the fern’s stem. The others include scaling,
+        rotation, and translation, such as 0.85x plus 0.04y and minus 0.04x plus 0.85y plus 1.6, that expand outward and create leaflets with different orientations.
+        Each rule has a specific probability: 0.01, 0.85, 0.07, and 0.07. Over time, this layering of affine maps builds up the full shape of the fern.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        I iterated over one million four hundred thousand points, starting from the origin. On each iteration, I randomly chose one transformation
+        using the assigned probabilities and applied it to update x and y. The new position was mapped into pixel coordinates using px equals width over 2
+        plus x times width over 10, and py equals y times height over 11. These scalings help fit the structure into the frame. The vertical stretching and shifting are essential,
+        because without the translation terms like plus 1.6 or plus 0.44, the fern would fold into itself instead of growing upward.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        Each leaflet reflects the whole, built through repetition and precise transformation. The structure grows outward through a system of rules, not randomness.
+        Every point is placed by logic, every curve a result of measured symmetry. This process embodies self-similarity, where complexity unfolds from the consistent layering of form.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="An archive of Kevin Hernandez's work on the Chen Attractor." />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Chen Attractor</title>
+  <style>
+    .equation-box {
+      background-color: #f5f5f5;
+      border-left: 4px solid #444;
+      padding: 15px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      margin: 20px 0;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Chen Attractor</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="2chaos.png" alt="Chen Attractor" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- VIDEOS -->
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px;">
+      <video src="static_chen.mp4" controls style="width: 100%; max-width: 440px; border: 1px solid #ddd;"></video>
+      <video src="rotating_chen.mp4" controls style="width: 100%; max-width: 440px; border: 1px solid #ddd;"></video>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The Chen attractor is a well-known example of a chaotic dynamical system discovered by Guanrong Chen in 1999. It belongs to a distinct class of three-dimensional continuous-time systems and is defined by a set of nonlinear differential equations that generate a complex, bounded, and non-repeating trajectory in phase space.
+        The attractor is often described as a double scroll due to its twin-lobed geometry, where the path oscillates unpredictably between two opposing regions.
+        Like other strange attractors in chaos theory, the Chen system is highly sensitive to initial conditions. Even a tiny variation in starting position can result in a completely different path, yet all trajectories remain confined within a well-defined volume.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The Chen system is governed by the following equations:
+      </p>
+
+      <div class="equation-box">
+        dx/dt = a(y − x)<br>
+        dy/dt = (c − a)x − xz + cy<br>
+        dz/dt = xy − bz
+      </div>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The parameters a, b, and c determine the system’s behavior. A common choice that produces chaotic motion is a = 35, b = 3, and c = 28.
+        These equations describe how a point in space evolves over time, with each component influenced by a nonlinear interaction between the others.
+        The resulting trajectory does not repeat or stabilize but instead folds and stretches through space, forming a shape that reveals the delicate interplay between order and instability.
+        The geometry of the Chen attractor contains rotational symmetry and internal layering, with each turn of the scroll exposing the recursive behavior embedded in the system.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        To simulate this system, I implemented the equations in Python using the Euler method for numerical integration.
+        Starting from a given initial point, I repeatedly applied the Chen equations to compute the rate of change at each step, then advanced the system forward using a fixed time increment.
+        This produces a sequence of coordinates that trace the attractor’s evolution over time.
+        Each point is the result of applying the system’s rules precisely, yet the overall shape cannot be predicted from any one segment alone.
+        It is only through iteration that the scrolls begin to form and the hidden structure of the attractor is revealed.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The final output consists of thousands of connected points, forming a thread that oscillates between two spiral regions.
+        Slight differences in initial conditions result in dramatically different outcomes, yet all trajectories fill the same volume with dense, non-intersecting lines.
+        I used multiple trajectories and colored them based on time to highlight the flow and emphasize the movement between the scrolls.
+        What emerges is not just a visual artifact but a direct consequence of the Chen equations.
+        The attractor exists not in any one frame, but in the continuous unfolding of the system’s dynamics, creating a shape that embodies the mathematical essence of chaos.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        You can find my code repository <a href="https://github.com/Kevinawge/mathematical-artworks" target="_blank" style="color: #0056b3; text-decoration: underline;">here</a>.
+      </p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="updated pieces of information that others may want about me." />
+  <meta name="author" content="Kevin Hernandez" />
+  <meta name="keywords" content="Kevin Hernandez, designer, data analyst, generative artist, contact, background, kevin" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Kevin Hernandez / about me</title>
+</head>
+<body>
+<div class="in-margin-container">
+
+  <nav class="header">
+    <a href="index.html">Kevin Hernandez</a>
+    <div class="right-items">
+      <a href="information.html" class="active">About me</a>
+    </div>
+  </nav>
+
+  <div class="lander">
+    <p>updated — largely 'professional' — bits of information.</p>
+  </div>
+
+  <hr />
+
+<!-- WHAT THE WORK IS ABOUT -->
+<div class="information-item-container">
+  <div class="information-titler">
+    <div class="left">
+      <h1>what the work is about</h1>
+    </div>
+    <div class="right">
+      <p>&darr;</p>
+    </div>
+  </div>
+  <div class="information-body-container">
+    <p>My approach to making is deeply shaped by the traditions and textures of Mexican culture. Growing up surrounded by vibrant murals, intricate textiles, and symbolic artifacts, art was never just decoration. It was communication, resistance, and memory. I always adored how art within my culture spoke without needing translation. It could carry rage, reverence, and playfulness in a single stroke of color or shadow. Whether in the towering works of José Chávez Morado or the surreal sculptural forms of Germán Cueto, I saw how form could provoke thought and reveal history, not by simplifying but by embracing complexity.</p>
+
+    <p>These artists’ works taught me that abstraction can still carry intention, and that meaning doesn’t have to be made obvious to be felt. Their practices formed a bridge to my own: an evolving intersection between mathematical structure and artistic exploration. I often find myself drawn to the tension between precision and unpredictability, a tension that lives within both Mexican art and mathematical systems.</p>
+
+    <p>My work today tries to navigate this bridge. On one side is the logic of data and the elegance of mathematical limits. On the other is a longing to make digital work that pulses with the same kind of richness and depth that cultural art forms have long held. By turning raw data into visual form, through generative algorithms, creative coding, and aesthetic rule systems, I aim to translate analytical processes into expressions that are both structured and soulful.</p>
+
+    <p>In this way, mathematical visualization becomes a kind of storytelling. It is a means of bringing emotion into equations and intuition into interfaces. For me, the goal is not simply to display information but to build meaning through pattern, movement, and constraint. I want the math to move and inspire. Math that doesn’t sit still — it speaks.</p>
+
+    <p>To end things off, here is a quote by famous American rapper Chief Keef — a quote I live by and always will:</p>
+
+    <div style="background-color:#efefef; padding:1em; margin-top:1em; font-style:italic;">
+      <p>"Failure is simply the opportunity to begin again, this time more intelligently."</p>
+    </div>
+  </div>
+</div>
+
+
+  <hr />
+
+  <!-- PROFESSIONAL BACKGROUND -->
+  <div class="information-item-container">
+    <div class="information-titler">
+      <div class="left">
+        <h1>my professional background & experience</h1>
+      </div>
+      <div class="right">
+        <p>&darr;</p>
+      </div>
+    </div>
+    <div class="information-body-container">
+      <p>Find a PDF of my resume <a href="KevinGHResume.pdf">here</a> or read below to get a quick overview.</p>
+      <p>I graduated from the University of North Carolina at Chapel Hill with a major in statistics and a minor in Spanish for the Business Professions. While studying, I developed a strong foundation in data analysis and visual thinking, which helped shape how I now approach information systems and design challenges. I stumbled upon the artistic side of programming after a course in coding piqued my curiosity—curiosity about how mathematical operations could generate unexpected, even beautiful, results. That curiosity became a gateway to producing generative artwork—pieces rooted in logic, yet alive with aesthetic exploration.</p>
+
+      <p>All of my coding work can be found in the here in <a href="https://github.com/Kevinawge" target="_blank">Github</a>. </p>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- WHAT I'M DOING NOW -->
+  <div class="information-item-container">
+    <div class="information-titler">
+      <div class="left">
+        <h1>what i'm doing now</h1>
+      </div>
+      <div class="right">
+        <p>&darr;</p>
+      </div>
+    </div>
+    <div class="information-body-container">
+      <p>Currently, I’m exploring job opportunities while continuing to produce generative artwork and working on data analysis projects through programming (mostly in Python). I’m also dedicating time to learning new ways of using creative code to craft work that is analytical in nature but expressive in impact.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- HOW TO REACH ME -->
+  <div class="information-item-container">
+    <div class="information-titler">
+      <div class="left">
+        <h1>how to reach me</h1>
+      </div>
+      <div class="right">
+        <p>&darr;</p>
+      </div>
+    </div>
+    <div class="information-body-container">
+      <p>The fastest way to reach me is by email at kevinawge[at]gmail.com. I respond to most of the messages I receive. You can also find me on <a href="https://www.linkedin.com/in/kevinawge" target="_blank">LinkedIn</a>, though I keep my connections limited to people I’ve interacted with personally.</p>
+    </div>
+  </div>
+
+  <!-- TOGGLE FUNCTIONALITY -->
+  <script>
+    document.querySelectorAll('.information-titler').forEach(titler => {
+      titler.addEventListener('click', () => {
+        const body = titler.nextElementSibling;
+        const arrow = titler.querySelector('.right p');
+        const isOpen = body.style.display === 'block';
+        body.style.display = isOpen ? 'none' : 'block';
+        arrow.innerHTML = isOpen ? '&darr;' : '&uarr;';
+      });
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <h3>designed & developed by kevin in 2025.<br>
+    all work is automatically copyrighted under the United States Copyright Act.</h3>
+  </footer>
+
+</div>
+</body>
+</html>

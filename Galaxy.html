@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Galaxy Particle Spiral by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Galaxy Particle Spiral</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Galaxy Particle Spiral</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="galaxy.png" alt="Galaxy Particle Spiral" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        This spiral galaxy emerges from exponential growth curves shaped by the formula <em>radius = r × e^(bθ)</em>. With θ increasing in radians, each spiral arm curves outward in a smooth logarithmic sweep, emulating the structure seen in real galaxies.
+        I assigned rotational offsets by subtracting π times a rotational constant from θ, giving the arms their distinctive twist.
+        Random integer values added to the coordinates introduce fuzz, spreading points slightly to simulate natural irregularity.
+        The decay constant <em>b</em> controls how tightly the arms spiral, and the choice of values for each arm determines their orientation and scale.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 30px;">
+        The central bulge and haze are shaped by layered distributions of normally and uniformly spaced points in three dimensions.
+        The spherical core is built using Gaussian noise across x, y, and z, with z compressed to form a thin galactic disk.
+        The surrounding haze relies on a square root distribution of radii to bias particles toward the center, paired with random angular positions in polar coordinates.
+        This creates the illusion of swirling matter and star density gradients using only spatial variation and layered geometry.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 30px;">
+        Finally, the entire system rests in a volume of randomized background stars, distributed uniformly within a cube of space.
+        While the bulk of the structure remains flat, the added vertical displacement for each particle introduces subtle three-dimensionality.
+        The result is an interplay of mathematical elegance and spatial depth.
+        By tuning exponential decay, radial growth, and noise-based displacements, I constructed a spiral formation where every arc, cluster, and scatter stems from precise mathematical relationships.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Forest Fire Sequence Visualization by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Stochastic Forestfire Expansion</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Stochastic Forestfire Expansion</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="forestfire.PNG" alt="Forest Fire Plot" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The forest fire sequence is defined by a deceptively simple rule: each term is the smallest positive integer that avoids forming any arithmetic progression of length three with earlier terms.
+        That is, for all j and k, the condition a(j), a(j+k), a(j+2k) forming an arithmetic progression must be avoided.
+        Despite the simplicity of this constraint, the sequence produces a surprisingly rich and unpredictable structure, full of sudden jumps, plateaus, and repetitions.
+        It reflects a delicate balance between regularity and disruption, where the avoidance of symmetry drives complexity.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        The plot evokes the appearance of smoke drifting across a burning field—an emergent shape born from discrete arithmetic rules.
+        Dense regions suggest areas of repetitive small values, while abrupt scatterings of higher values punctuate the landscape like bursts of energy.
+        The cumulative effect of these tiny decisions not to form a simple progression is astonishing: the result is a turbulent, organic form that seems to pulse with chaotic motion.
+        This visual resemblance to natural phenomena like smoke or fire inspired the nickname "forest fire" for the sequence.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        Mathematically, the key idea is to reject any candidate value that completes a three-term arithmetic sequence when substituted at position n.
+        In code, for each n, we maintain a set of forbidden values constructed using the formula 2a(n−k)−a(n−2k) across all k such that n−2k ≥ 0.
+        The first integer not found in this set becomes a(n).
+        While the rule is short, it encodes a dense network of dependencies between terms that grow increasingly entangled.
+        This makes the sequence fascinating both as a recursive object and as a dynamic pattern generator in Python-based visualizations.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        You can find my code repository <a href="https://github.com/Kevinawge/mathematical-artworks" target="_blank" style="color: #0056b3; text-decoration: underline;">here</a>.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

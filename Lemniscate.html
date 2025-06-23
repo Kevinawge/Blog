@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Lemniscate Grid Pattern by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Lemniscate Grid Pattern</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Lemniscate Grid Pattern</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="lemniscate.jpg" alt="Lemniscate Pattern" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: left;">
+      <h2 style="font-size: 22px; font-weight: bold; text-align: center;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        This artwork constructs a layered grid of lemniscate curves, shaped by the polar equation r = a × sqrt(|cos(2θ)|),
+        where a is a scale constant and theta moves from 0 to 2π. There are 120 total curves, and each one is rotated by a phase of 2π × i / 120,
+        creating a radial sweep across the canvas. I used x = r × cos(θ + phase) and y = r × sin(θ + phase)
+        to map out the full shape in Cartesian coordinates. A sinusoidal pattern based on sin(3θ + phase)
+        created the color variation across the pattern, where I let intensity flow between 0 and 1.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        In the code, I created a loop over 120 iterations to rotate each lemniscate around the center,
+        and for each layer I recalculated the angle phase and the color intensity. I generated five overlapping
+        scatter plots per curve with increasing transparency, from alpha 0.02 to 0.12, to build up depth and density.
+        The theta array has 2000 values, giving me smooth and continuous curves. I used the twilight shifted colormap
+        to give it a subtle chromatic transition, keeping the image soft and continuous. This mathematical layering
+        gave me full control over symmetry while still letting complexity emerge naturally.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        Although visually radial, this design behaves in the opposite way of my radial line intersection piece.
+        Instead of lines slicing through a central point and generating unpredictable collisions, here the flow
+        follows soft curves that spiral in harmony. Both are structured around a circular frame,
+        but one builds from consistent curvature, while the other fragments through linear chaos.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

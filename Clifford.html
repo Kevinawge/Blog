@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Clifford Attractor by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Clifford Strange Attractor</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Clifford Strange Attractor</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="clifford.jpg" alt="Clifford Attractor" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: left;">
+      <h2 style="font-size: 22px; font-weight: bold; text-align: center;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        This piece shows the Clifford attractor, a type of chaotic system defined by just four parameters and two equations.
+        I used a = −1.4, b = 1.6, c = 1.0, and d = 0.7. From an initial point at the origin, the values of x and y evolve using
+        the formulas: x = sin(a·y) + c·cos(a·x), and y = sin(b·x) + d·cos(b·y). Even though each update uses only sine and cosine,
+        repeating this calculation one million times generates motion that looks unpredictable and organic.
+        The equations are symmetric, so I mirrored the full dataset by appending −x and −y to create additional texture and balance.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333;">
+        To build the image, I plotted over two million points with a twilight shifted colormap.
+        I calculated an intensity for each point using the square root of x² + y², then normalized it between 0 and 1.
+        This value controlled the color and helped bring out the overlapping density patterns.
+        I added multiple transparent layers using alpha values from 0.02 to 0.15 to soften the glow and blend the curves.
+        The final result has a smoky, folded shape that hints at hidden order beneath the surface.
+      </p>
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+
+</body>
+</html>

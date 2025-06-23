@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+  <meta name="description" content="Rémy Sigrist's Sequence Exploration by Kevin Hernandez" />
+  <meta name="author" content="Kevin Hernandez" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Rémy Sigrist's Sequence</title>
+</head>
+<body>
+
+  <div class="in-margin-container">
+
+    <!-- HEADER -->
+    <nav class="header">
+      <a href="index.html" class="active">Kevin Hernandez</a>
+      <div class="right-items">
+        <a href="information.html">About Me</a>
+      </div>
+    </nav>
+
+    <!-- TITLE -->
+    <div style="text-align: center; margin-top: 80px;">
+      <h1 style="font-size: 28px; font-weight: bold;">Rémy Sigrist's Sequence</h1>
+      <p style="color: #999; font-size: 16px;">2025</p>
+    </div>
+
+    <!-- IMAGE -->
+    <div style="text-align: center; margin-top: 50px;">
+      <img src="remy.PNG" alt="Rémy Sigrist Sequence" style="width: 90%; max-width: 900px; height: auto;" />
+    </div>
+
+    <!-- OVERVIEW -->
+    <div style="max-width: 800px; margin: 80px auto 40px auto; text-align: center;">
+      <h2 style="font-size: 22px; font-weight: bold;">Overview</h2>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        Rémy Sigrist's sequence is one of the most visually surprising structures to emerge from simple combinatorial rules.
+        At first glance, the sequence plots resemble mountainous terrain, complete with jagged slopes, basins, and terraces.
+        But behind the landscape lies a strict rule: for any two distinct integers ii and jj, if a(i) = a(j) then a(i) = a(j), then the bitwise AND of ii and jj must be zero.
+        In other words, no two indices that share any binary digits in common are allowed to land on the same value.
+        The result is a finely tuned packing problem over binary representations.
+        The lexicographically earliest solution creates not only a valid sequence but one that yields striking geometric structure when visualized as vertical stacks.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        This visual structure is not arbitrary. The zeros in the sequence align exactly with powers of two,
+        while the higher values fill in space under a constraint that mimics binary orthogonality.
+        As the index increases, earlier values fill out a kind of invisible grid, pushing later values higher in a deterministic but unpredictable way.
+        The apparent fractality comes from the recursive logic hidden within the binary expansion of integers.
+        The result is a pattern that feels simultaneously engineered and emergent.
+        This is what happens when discrete logic generates form. A sequence becomes a terrain. A function becomes a topology.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        To generate the plot, I implemented the rule directly using the bitwise AND operator.
+        I created a list of counters where each entry tracked the cumulative binary mask used at that level.
+        For each integer ii, I searched for the smallest index aa such that ii shared no bits with the existing value stored at that level.
+        Once I found this position, I updated the mask with ii and assigned that index as the sequence value.
+        This approach guaranteed the constraint was preserved and ensured that every assignment respected the binary independence condition.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left;">
+        I visualized the result by plotting each index against its corresponding sequence value.
+        The image revealed sharp peaks and valleys that traced out recursive forms and suggested deeper structure beneath the surface.
+        I used a binary color palette to emphasize contrast and avoid visual noise.
+        What emerged was a pattern that feels architectural, precise, and unexpected.
+        It is a rare example of visual elegance arising purely from logic.
+        No geometry was added by hand. No randomness was introduced.
+        Only a single condition applied across the integers produced something that resembles natural symmetry and constructed design.
+      </p>
+
+      <p style="line-height: 1.7; font-size: 17px; color: #333; text-align: left; margin-top: 40px;">
+        You can find my code repository <a href="https://github.com/Kevinawge/mathematical-artworks" target="_blank" style="color: #0056b3; text-decoration: underline;">here</a>.
+      </p>
+
+    </div>
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="footer">
+      <h3>
+        designed & developed by kevin hernandez in 2025.<br>
+        all work is automatically copyrighted under the United States Copyright Act.
+      </h3>
+    </footer>
+
+  </div>
+</body>
+</html>
